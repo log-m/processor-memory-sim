@@ -1,0 +1,51 @@
+1  //load 1
+1
+14  //X = 1
+1   //load 10
+10
+16  //Y = 10
+17  //AC = Y = 10
+12  //AC = AC - X
+9 	//print AC
+1
+21	//jump to 99 if AC - X = 0
+99
+25	//IncX
+20	//jump to line 6 (AC = Y = 10)
+6
+
+.99	//Load the letters, print out the word 'GOBLIN'
+1
+71
+9
+2
+1
+79
+9
+2
+1
+66
+9
+2
+1
+76
+9
+2
+1
+73
+9
+2
+1
+78
+9
+2
+50	//End
+
+.1000
+27	//push
+1	//load !
+33
+9	//print !
+2
+28	//pop
+30	//return
