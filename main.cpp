@@ -77,8 +77,14 @@ int main(int argc, char *argv[])
 
             if(lines.at(0) == '.') //If the line is a change of load address, set counter to work there
                 insWriter = ins;
-            else if(ins == -1) //If no integer was found on the line, it isn't an instruction. Skip it
-                continue;
+            else if(ins == -1)
+            {//If no integer was found on the line, it isn't an instruction. Skip it
+                if(file.good())
+                    continue;
+                else
+                    break;
+            }
+            
             else //Integer found, no funny stuff
             {
                 memory[insWriter] = ins; //Write instruction to memory
